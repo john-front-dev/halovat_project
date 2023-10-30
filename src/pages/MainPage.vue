@@ -1,14 +1,17 @@
 <template>
   <div>
-    <Navbar/>
+    <Header/>
+    <Carousel/>
   </div>
 </template>
 
 <script>
-import Navbar from '../components/Navbar.vue'; 
+import Carousel from '../components/Carousel.vue'
+import Header from '../components/Header.vue';
 export default {
   components: {
-    Navbar,
+    Carousel,
+    Header,
   }
 }
 </script>
