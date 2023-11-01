@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full border-b">
+  <div class="w-full border-b pt-[141px]">
     <div class="flex justify-start items-center h-[91px] xl:container my-0 mx-auto">
       <div class="w-[117px] min-w-[117px] min-h-[53px] h-[53px] ml-[72px]">
           <img src="../assets/logo.png" alt="">

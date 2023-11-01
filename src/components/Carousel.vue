@@ -1,18 +1,20 @@
 <template>
   <div class="2xl:container my-0 mx-auto">
-    <div class="flex justify-between items-start px-[54px] gap-12 mt-[117px]">
-      <button class="w-[80px] h-[377px] flex justify-center items-center rounded-[30px] border border-[#4A1D1F] mt-[39px]">
+    <div class="flex justify-between items-start px-[54px] gap-12 2xl:gap-20 mt-[117px]">
+      <button @click="moveContainer('left')" class="w-[80px] min-w-[80px] h-[377px] flex justify-center items-center rounded-[30px] border border-[#4A1D1F] mt-[39px]">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.57 5.93005L3.5 12.0001L9.57 18.0701" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.5 12H3.67004" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
-      <div class="flex flex-col justify-center items-start mb-[72px]" v-for="img in images" :key="img.id">
-        <img :src="img.url" alt="">
-        <div class="flex flex-col justify-start items-start px-[27px] text-[#4A1D1F] text-[20px] font-semibold mt-[21px]">
-          <span>{{ img.name }}</span>
-          <svg class="mt-[5px] mb-[8px]" xmlns="http://www.w3.org/2000/svg" width="275" height="2" viewBox="0 0 275 2" fill="none"><path d="M0 1L274.988 0.999976" stroke="#DEDDDD"/></svg>
-          <span>{{ img.type }}</span>
+      <div class="flex flex-row justify-start items-center xl:gap-[25px] 2xl:gap-[60px] max-w-full overflow-auto" ref="allProducts">
+        <div v-for="img in images" :key="img.id" class=" mb-[72px]" >
+          <img :src="img.url" alt="">
+          <div class="flex flex-col justify-start items-start px-[27px] text-[#4A1D1F] text-[20px] font-semibold mt-[21px]">
+            <span>{{ img.name }}</span>
+            <svg class="mt-[5px] mb-[8px]" xmlns="http://www.w3.org/2000/svg" width="275" height="2" viewBox="0 0 275 2" fill="none"><path d="M0 1L274.988 0.999976" stroke="#DEDDDD"/></svg>
+            <span>{{ img.type }}</span>
+          </div>
         </div>
       </div>
-      <button class="w-[80px] h-[377px] flex justify-center items-center rounded-[30px] border border-[#4A1D1F] mt-[39px]">
+      <button @click="moveContainer('right')" class="w-[80px] min-w-[80px] h-[377px] flex justify-center items-center rounded-[30px] border border-[#4A1D1F] mt-[39px]">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14.4299 5.93005L20.4999 12.0001L14.4299 18.0701" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.5 12H20.33" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
     </div>
@@ -36,9 +38,40 @@ export default {
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
+        {url:img1,name:'Ананас',type:'Мармеладные дольки'},
+        {url:img1,name:'Ананас',type:'Мармеладные дольки'},
+        {url:img1,name:'Ананас',type:'Мармеладные дольки'},
       ]
     }
   },
+  methods: {
+    moveContainer(direction) {
+      const container = this.$refs.allProducts;
+      if (container) {
+        let scrollAmount = 200;
+        if (window.innerWidth > 900) scrollAmount = 400
+        const currentScroll = container.scrollLeft;
+
+        if (direction === 'left') {
+          container.scrollTo({
+            left: currentScroll - scrollAmount,
+            behavior: 'smooth'
+          });
+
+          this.isScrollingLeft = true;
+          this.isScrollingRight = false;
+        } else if (direction === 'right') {
+          container.scrollTo({
+            left: currentScroll + scrollAmount,
+            behavior: 'smooth',
+          });
+
+          this.isScrollingLeft = false;
+          this.isScrollingRight = true;
+        }
+      }
+    },
+  }
 }
 </script>
 
