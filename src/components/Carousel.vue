@@ -1,10 +1,10 @@
 <template>
   <div class="2xl:container my-0 mx-auto">
-    <div class="flex justify-between items-start px-[54px] gap-12 mt-[117px]">
+    <div class="flex justify-between items-start px-[54px] gap-12 2xl:gap-20 mt-[117px]">
       <button @click="moveContainer('left')" class="w-[80px] min-w-[80px] h-[377px] flex justify-center items-center rounded-[30px] border border-[#4A1D1F] mt-[39px]">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.57 5.93005L3.5 12.0001L9.57 18.0701" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.5 12H3.67004" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
-      <div class="flex flex-row justify-start items-center gap-[46px] max-w-full overflow-auto" ref="allProducts">
+      <div class="flex flex-row justify-start items-center xl:gap-[25px] 2xl:gap-[60px] max-w-full overflow-auto" ref="allProducts">
         <div v-for="img in images" :key="img.id" class=" mb-[72px]" >
           <img :src="img.url" alt="">
           <div class="flex flex-col justify-start items-start px-[27px] text-[#4A1D1F] text-[20px] font-semibold mt-[21px]">
