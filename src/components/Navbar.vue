@@ -6,7 +6,7 @@
       </div>
       <ul class="flex items-center ml-[272px] z-[50] list-none text-[#272727] text-[16px] font-normal gap-[45px]">
           <li><router-link to="/">Главная</router-link></li>
-          <li>О компании</li>
+          <li><router-link to="/aboutCompany">О компании</router-link></li>
           <li><router-link to="products">Продукция</router-link></li>
           <li>Партнёрам</li>
       </ul>
@@ -23,5 +23,8 @@ export default {
 <style scoped>
 li{
     @apply cursor-pointer
+}
+li:active{
+  @apply text-[#E31E25] underline;
 }
 </style>
