@@ -24,6 +24,9 @@ export default {
     Carousel,
     Content,
     Header,
+  },
+  mounted() {
+    window.scrollTo(0,0);
   }
 }
 </script>

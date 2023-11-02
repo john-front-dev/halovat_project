@@ -4,7 +4,7 @@
       <div class=" bg-[#fff] flex justify-center items-center rounded-t-[37px] w-[378px] h-[145px] text-[#292F36] text-[50px] ">Продукция</div>
     </div>
     <div class="grid grid-cols-3 grid-rows-3 px-[157px] mb-[85px]">
-      <div v-for="img in images" :key="img.id">
+      <div v-for="img in images" :key="img.id" class="flex flex-col justify-center items-center">
         <img :src="img.url" alt="">
         <div class="flex flex-col justify-start items-start px-[27px] text-[#4A1D1F] text-[20px] font-semibold mt-[21px] mb-[87px]">
           <span>{{ img.name }}</span>
