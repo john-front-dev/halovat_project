@@ -31,7 +31,7 @@
         <div class="w-[518px]">
           <h3 class="mb-[11px] text-[#292F36] text-[50px] font-medium tracking-[1px] leading-[125%]">Что мы <br> производим?</h3>
           <span class="mb-[32px] text-[#4D5053] text-[22px] leading-[150%] tracking-[0.22px]">Пройдите чтобы посмотреть весь <br> ассортимент нашей продукции</span>
-          <button @click="$router.push('/products')" class="mt-[15px] bg-[#E31E25] back fill-white active:bg-[#fff] active:fill-[#2F2F2F] text-[#fff] text-[20px] active:text-[#2F2F2F] active:border active:border-[#4A1D1F] rounded-md gap-[10px] px-[30px] py-[10px] flex justify-start items-center w-[255px] h-[75px]"><span class="ml-[34px]">Продукция</span><span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="13" viewBox="0 0 30 13"><path d="M29.5303 7.03033C29.8232 6.73744 29.8232 6.26256 29.5303 5.96967L24.7574 1.1967C24.4645 0.903806 23.9896 0.903806 23.6967 1.1967C23.4038 1.48959 23.4038 1.96447 23.6967 2.25736L27.9393 6.5L23.6967 10.7426C23.4038 11.0355 23.4038 11.5104 23.6967 11.8033C23.9896 12.0962 24.4645 12.0962 24.7574 11.8033L29.5303 7.03033ZM0 7.25H29V5.75H0V7.25Z"/></svg></span></button>
+          <button @click="$router.push('/products')" class="mt-[15px] bg-[#E31E25] back fill-white active:bg-[#fff] active:fill-[#2F2F2F] text-[#fff] text-[20px] active:text-[#2F2F2F] font-semibold active:border-2 active:border-[#949494] rounded-md gap-[10px] px-[30px] py-[10px] flex justify-start items-center w-[255px] h-[75px]"><span class="ml-[34px]">Продукция</span><span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="13" viewBox="0 0 30 13"><path d="M29.5303 7.03033C29.8232 6.73744 29.8232 6.26256 29.5303 5.96967L24.7574 1.1967C24.4645 0.903806 23.9896 0.903806 23.6967 1.1967C23.4038 1.48959 23.4038 1.96447 23.6967 2.25736L27.9393 6.5L23.6967 10.7426C23.4038 11.0355 23.4038 11.5104 23.6967 11.8033C23.9896 12.0962 24.4645 12.0962 24.7574 11.8033L29.5303 7.03033ZM0 7.25H29V5.75H0V7.25Z"/></svg></span></button>
         </div>
       </div>
     </div>
@@ -65,7 +65,7 @@ li{
   box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
 }
 .back-img{
-  background: url('../assets/back/4.png'), lightgray 50% / cover no-repeat;
+  background: url('../assets/back/9.jpg'), lightgray 50% / cover no-repeat;
   width: 100%;
   height: 356px;
   flex-shrink: 0;
