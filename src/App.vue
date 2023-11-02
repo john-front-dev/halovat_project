@@ -2,14 +2,17 @@
   <div>
     <Navbar/>
     <RouterView />
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/Navbar.vue'; 
+import Footer from '@/components/Footer.vue';
 export default {
   components:{
     Navbar,
+    Footer
   }
 }
 </script>
@@ -27,6 +30,8 @@ img {
 }
 *{
   -webkit-touch-callout: none;
+  
+  /* font-family: 'Poppins', sans-serif; */
   /* -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -35,4 +40,6 @@ img {
   -webkit-tap-highlight-color: transparent;
   outline: none; */
 }
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); */
+
 </style>
