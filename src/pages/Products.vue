@@ -3,9 +3,9 @@
     <div class="back-img flex justify-center items-end mb-[200px]">
       <div class=" bg-[#fff] flex justify-center items-center rounded-t-[37px] w-[378px] h-[145px] text-[#292F36] text-[50px] ">Продукция</div>
     </div>
-    <div class="grid grid-cols-3 grid-rows-3 px-[157px] mb-[85px]">
+    <div class="grid xl:grid-cols-3 grid-cols-2 grid-rows-3 xl:px-[157px] px-[10vw] mb-[85px]">
       <div v-for="img in images" :key="img.id" class="flex flex-col justify-center items-center">
-        <img :src="img.url" alt="">
+        <img :src="img.url" class="w-[80%]" alt="">
         <div class="flex flex-col justify-start items-start px-[27px] text-[#4A1D1F] text-[20px] font-semibold mt-[21px] mb-[87px]">
           <span>{{ img.name }}</span>
           <svg class="mt-[5px] mb-[8px]" xmlns="http://www.w3.org/2000/svg" width="275" height="2" viewBox="0 0 275 2" fill="none"><path d="M0 1L274.988 0.999976" stroke="#DEDDDD"/></svg>
@@ -45,6 +45,7 @@ export default {
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
+        
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
@@ -57,6 +58,7 @@ export default {
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
+        
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
@@ -66,6 +68,10 @@ export default {
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
         {url:img1,name:'Ананас',type:'Мармеладные дольки'},
+        {url:img1,name:'Ананас',type:'Мармеладные дольки'},
+        {url:img1,name:'Ананас',type:'Мармеладные дольки'},
+        {url:img1,name:'Ананас',type:'Мармеладные дольки'},
+        
       ]
     }
   },

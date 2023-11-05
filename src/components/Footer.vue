@@ -1,6 +1,6 @@
 <template>
   <div class="2xl:container my-0 mx-auto">
-    <div class="flex justify-start items-start pl-[80px] gap-[101px] mb-[82px]">
+    <div class="flex flex-col lg:flex-row justify-start items-start pl-[80px] gap-[101px] mb-[82px]">
       <div class="flex flex-col justify-start items-start gap-[18px] w-[393px]">
         <img src="../assets/footer.png" alt="">
         <p class="text-[#272727] text-[14px] leading-[22.26px]">Данный сайт разработан в рамках проекта: «Активизация экономического восстановления от последствий пандемии COVID-19 посредством улучшения благосостояния, возможностей для трудоустройства и продвижения регионального сотрудничества в ферганской долине» финансируемого Правительством Российской Федерации</p>
