@@ -44,7 +44,7 @@ export default {
 
 <style scoped>
 input{
-  @apply lg:w-[459px] w-[300px] sm:w-[350px] h-[60px] lg:h-[75px] mb-[25px] pl-[65px] placeholder:text-[16px] lg:placeholder:text-[20px] placeholder:text-[#927779] py-[10px] border border-[#4A1D1F] rounded-md text-[#4A1D1F] text-[16px] lg:text-[20px]
+  @apply lg:w-[459px] w-[300px] sm:w-[350px] h-[60px] lg:h-[75px] mb-[25px] pl-[65px] placeholder:text-[16px] lg:placeholder:text-[20px] placeholder:text-[#927779] py-[10px] border border-[#4A1D1F] rounded-md text-[#4A1D1F] text-[16px] lg:text-[20px];
 }
 .back-image{
   background: url('@/assets/conectWithUs.png'), lightgray 50% / cover no-repeat;
