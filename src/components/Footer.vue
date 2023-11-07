@@ -1,7 +1,7 @@
 <template>
   <div class="2xl:container my-0 mx-auto">
     <div class="flex flex-col lg:flex-row justify-start items-start pl-[20px] sm:pl-[40px] md:pl-[50px] lg:pl-[60px] xl:pl-[80px] gap-[50px] lg:gap-[101px] mb-[30px] lg:mb-[82px]">
-      <div class="flex flex-col justify-start items-start gap-[18px] w-[393px]">
+      <div class="flex flex-col justify-start items-start gap-[18px] minw-[250px] max-w-[330px] sm:w-[393px]">
         <img class="" src="../assets/footer.png" alt="">
         <p class="text-[#272727] text-[14px] leading-[22.26px]">Данный сайт разработан в рамках проекта: «Активизация экономического восстановления от последствий пандемии COVID-19 посредством улучшения благосостояния, возможностей для трудоустройства и продвижения регионального сотрудничества в ферганской долине» финансируемого Правительством Российской Федерации</p>
         <div class="flex justify-start items-center gap-[30px] mt-[31px]">
@@ -26,13 +26,13 @@
       </div>
       <div class="flex flex-col justify-start items-start w-[300px] gap-[9px] mb-[9px]">
         <h2 class="src">Контакты</h2>
-        <p class="text-[#4D5053] text-[16px] leading-[250%] src">Республика Таджикистан, Согдийская <br> область, город Худжанд, 735700, <br> Северо - восточная <br> промзона.</p>
+        <p class="text-[#4D5053] text-[14px] sm:text-[16px] leading-[190%] sm:leading-[250%] src">Республика Таджикистан, Согдийская <br> область, город Худжанд, 735700, <br> Северо - восточная <br> промзона.</p>
         <span class="span source"><a href="mailto:halovati.sugd@inbox.ru">halovati.sugd@inbox.ru</a></span>
         <span class="span source"><a href="tel: +992927133399">+992 92 713 33 99</a></span>
       </div>
     </div>
-    <div class="flex justify-center items-end w-full pt-[20px] lg:pt-[57px] border-t border-[#E5E5E5]">
-      <span class="text-[#4D5053] text-[18px] leading-[27px]">© 2023 Сехи Канноди “Халоват”</span>
+    <div class="flex justify-center items-end w-full pt-[10px] sm:pt-[20px] lg:pt-[57px] border-t border-[#E5E5E5]">
+      <span class="text-[#4D5053] text-[16px] sm:text-[18px] leading-[27px]">© 2023 Сехи Канноди “Халоват”</span>
     </div>
   </div>
 </template>
@@ -45,10 +45,10 @@ export default {
 
 <style scoped>
 h2{
-  @apply text-[#292F36] text-[22px] leading-[125%]
+  @apply text-[#292F36] text-[18px] sm:text-[22px] leading-[125%] mt-4 sm:mt-0
 }
 .span{
-  @apply text-[#4D5053] text-[16px] leading-[250%]
+  @apply text-[#4D5053] text-[14px] sm:text-[16px] leading-[190%] sm:leading-[250%]
 }
 .src:active{
   @apply text-[#E31E25] underline font-medium 

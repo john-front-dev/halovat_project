@@ -1,7 +1,7 @@
 <template>
   <div class="2xl:container my-0 mx-auto">
-    <div class="back-img flex justify-center items-end mb-[100px] lg:mb-[200px]">
-      <div class=" bg-[#fff] flex justify-center items-center rounded-t-[37px] w-[260px] h-[100px] lg:w-[378px] lg:h-[145px] text-[#292F36] text-[30px] lg:text-[50px] ">Продукция</div>
+    <div class="back-img w-full h-[200px] md:h-[300px] lg:h-[356px] flex justify-center items-end mb-[40px] sm:mb-[60px] md:mb-[80px] lg:mb-[200px]">
+      <div class="bg-[#fff] flex justify-center items-center rounded-t-[15px] sm:rounded-t-[27px] md:rounded-t-[37px] w-[140px] h-[50px] sm:w-[200px] sm:h-[70px] md:w-[260px] md:h-[100px] lg:w-[378px] lg:h-[145px] text-[#292F36] text-[20px] sm:text-[25px] md:text-[30px] lg:text-[50px]">Продукция</div>
     </div>
     <div class="grid xl:grid-cols-3 grid-cols-2 grid-rows-3 xl:px-[157px] gap-[10px] lg:px-[10vw] lg:mb-[85px] mb-[30px]">
       <div v-for="img in paginatedImages" :key="img.id" class="flex flex-col justify-center items-center">
@@ -111,8 +111,5 @@ export default {
 <style scoped>
 .back-img{
   background: url('../assets/back/3.png'), lightgray 50% / cover no-repeat;
-  width: 100%;
-  height: 356px;
-  flex-shrink: 0;
 }
 </style>
