@@ -11,7 +11,7 @@
 
 <script>
 import SendApplication from '@/components/SendApplication.vue';
-import ContectWithUs from '@/components/ContectWithUs.vue';
+import ContectWithUs from '@/components/ConnectWithUs.vue';
 import ForPartners from '@/components/ForPartners.vue';
 import Carousel from '@/components/Carousel.vue'
 import Content from '@/components/Content.vue'
@@ -26,7 +26,10 @@ export default {
     Header,
   },
   mounted() {
-    window.scrollTo(0,0);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 }
 </script>
