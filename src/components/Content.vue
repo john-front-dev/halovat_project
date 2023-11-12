@@ -1,5 +1,5 @@
 <template>
-  <div class="2xl:container my-0 mx-auto px-[68px]">
+  <div class="2xl:container hidden my-0 mx-auto px-[68px]">
     <div class="flex justify-between items-center mb-[100px]">
       <div class="flex flex-col justify-start items-start gap-[15px] w-[644px] h-[347px]">
         <h2 class="text-[#4A1D1F] text-[44px] font-medium">Мы стремимся к <br> совершенству для Вас</h2>
