@@ -22,7 +22,7 @@
           <img class="z-50 w-[300px] h-[200px] md:w-[400px] md:min-w-[400px] md:h-[250px] xl:w-[500px] xl:h-[350px]" :src="currentImage.url" alt="">
         </div>
     </div>
-    <div class="lg:inline-flex justify-center items-center ml-[25px] sm:ml-[56px] lg:ml-[10px] xl:ml-[93px] mt-[60px] lg:mt-[186px] h-[128px] mr-[25px] sm:mr-[56px] lg:mr-[10px] xl:mr-[96px] mb-[100px] lg:mb-0">
+    <div class="lg:inline-flex justify-center items-center ml-[25px] sm:ml-[56px] lg:ml-[10px] xl:ml-[93px] mt-[60px] lg:mt-[186px] h-[128px] mr-[25px] sm:mr-[56px] lg:mr-[10px] xl:mr-[96px] mb-[150px] lg:mb-0">
       <h2 class="text-[#4A1D1F] text-[20px] sm:text-[26px] lg:text-[36px] font-bold border-b w-full border-[#4A1D1F] mb-4 pb-4 lg:border-none lg:mb-0 lg:pb-0">Только лучшее для Вас</h2>
       <div class="hidden lg:block border-r border-[#4A1D1F] h-full mx-[40px]"></div>
       <p class="text-[#272727] text-[18px] lg:text-[22px] lg:whitespace-nowrap">Мы тщательно отбираем только лучшие ингредиенты, <br class="hidden lg:flex">чтобы каждый продукт приносил непередаваемое удовольствие. <br class="hidden lg:flex"> Все для того, чтобы Ваши вкусовые ожидания были превзойдены.</p>

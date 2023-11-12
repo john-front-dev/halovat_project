@@ -1,6 +1,6 @@
 <template>
   <div class="2xl:container my-0 mx-auto">
-    <div class="mt-[109px] mb-[132px]">
+    <div class="mt-[109px] mb-[30px] lg:mb-[132px]">
       <div class="flex flex-col lg:flex-row justify-center items-center lg:items-end">
         <div class="flex flex-col lg:mr-[182px]">
           <h2 class="text-[#272727] font-semibold text-[22px] sm:text-[30px] lg:text-[44px]">Cвяжитесь с нами</h2>
@@ -22,7 +22,7 @@
           </div>
           <button class="mt-[15px] bg-[#E31E25] fill-white active:bg-[#fff] active:fill-[#2F2F2F] text-[#fff] text-[20px] active:text-[#2F2F2F] border border-[#4A1D1F] rounded-md gap-[10px] px-[30px] py-[10px] flex justify-start items-center h-[60px] sm:h-[75px]"><span class="ml-[34px]">Отправить заявку</span><span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="13" viewBox="0 0 30 13"><path d="M29.5303 7.03033C29.8232 6.73744 29.8232 6.26256 29.5303 5.96967L24.7574 1.1967C24.4645 0.903806 23.9896 0.903806 23.6967 1.1967C23.4038 1.48959 23.4038 1.96447 23.6967 2.25736L27.9393 6.5L23.6967 10.7426C23.4038 11.0355 23.4038 11.5104 23.6967 11.8033C23.9896 12.0962 24.4645 12.0962 24.7574 11.8033L29.5303 7.03033ZM0 7.25H29V5.75H0V7.25Z"/></svg></span></button>
         </div>
-        <div class=" w-[260px] h-[290px] lg:w-[322px] lg:h-[359px] mb-[40px]">
+        <div class=" w-[200px] h-auto lg:w-[322px] lg:h-[359px] mb-[40px]">
           <img src="@/assets/conectWithUs.png" alt="">
         </div>
       </div>
