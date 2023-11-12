@@ -4,7 +4,7 @@
       <button @click="moveContainer('left')" class="w-[80px] min-w-[40px] sm:min-w-[60px] lg:min-w-[80px] h-[150px] lg:h-[377px] flex justify-center items-center rounded-[30px] border border-[#4A1D1F] mt-[45px] sm:mt-[70px] lg:mt-[39px] outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.57 5.93005L3.5 12.0001L9.57 18.0701" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.5 12H3.67004" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
-      <div class="flex flex-row justify-start items-center gap-[20px] sm:gap-[30px] xl:gap-[45px] 2xl:gap-[60px] max-w-full overflow-auto" ref="allProducts">
+      <div class="flex flex-row justify-start items-center gap-[20px] mx-4 sm:gap-[30px] xl:gap-[45px] 2xl:gap-[60px] max-w-full overflow-auto" ref="allProducts">
         <div v-for="img in images" :key="img.id" class="w-[200px] h-[300px] md:w-[250px] md:h-[360px] lg:w-[455px] lg:h-[510px] mb-[72px]" >
           <img :src="img.url" alt="" class="w-[160px] h-[220px] sm:w-[180px] sm:h-[250px] md:w-[220px] md:h-[280px] lg:w-[328px] lg:h-[455px]">
           <div class="flex flex-col justify-start items-start px-2 lg:px-[27px] text-[#4A1D1F] text-[14px] lg:text-[20px] font-semibold mt-3 lg:mt-[21px]">
