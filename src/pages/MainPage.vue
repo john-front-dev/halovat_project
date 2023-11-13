@@ -1,11 +1,11 @@
 <template>
   <div>
-    <Header/>
+    <Header @goToapplication="scrollToApplication()"/>
     <Carousel/>
     <Content/>
     <ForPartners/>
     <ContectWithUs/>
-    <SendApplication/>
+    <SendApplication id="application"/>
   </div>
 </template>
 
@@ -24,6 +24,16 @@ export default {
     Carousel,
     Content,
     Header,
+  },
+  methods: {
+    scrollToApplication() {
+      const applicationElement = document.getElementById('application');
+      if (applicationElement) {
+        applicationElement.scrollIntoView({
+          behavior: 'smooth',
+        });
+      }
+    },
   },
   mounted() {
     window.scrollTo({

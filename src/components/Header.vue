@@ -9,7 +9,7 @@
           Мы предлагаем широкий ассортимент высококачественных сладких угощений, включая шоколадные конфеты, вафли, разнообразные виды печенья, мармелады и другие кондитерские изделия, созданные с любовью к деталям и вниманием к качеству.
         </p>
         <div class="flex justify-start items-center mt-[20px] lg:mt-[33px]">
-          <button class="flex active:bg-[#fff] whitespace-nowrap active:text-[#2F2F2F] active:fill-[#2F2F2F] fill-[#FFFBFB] items-center justify-center gap-2 rounded-[6px] bg-[#E31E25] uppercase border border-[#949494] text-[#FFFBFB] leading-4 w-[160px] h-[45px] lg:h-[75px] lg:w-[283px] text-[14px] lg:text-[24px] font-semibold mr-[28px]">
+          <button @click="$emit('goToapplication')" class="flex active:bg-[#fff] whitespace-nowrap active:text-[#2F2F2F] active:fill-[#2F2F2F] fill-[#FFFBFB] items-center justify-center gap-2 rounded-[6px] bg-[#E31E25] uppercase border border-[#949494] text-[#FFFBFB] leading-4 w-[160px] h-[45px] lg:h-[75px] lg:w-[283px] text-[14px] lg:text-[24px] font-semibold mr-[28px]">
             Оставить заявку <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.79289 1.29289C3.18342 0.902369 3.81658 0.902369 4.20711 1.29289L9.41421 6.5L4.20711 11.7071C3.81658 12.0976 3.18342 12.0976 2.79289 11.7071C2.40237 11.3166 2.40237 10.6834 2.79289 10.2929L6.58579 6.5L2.79289 2.70711C2.40237 2.31658 2.40237 1.68342 2.79289 1.29289Z"/></svg>
           </button>
           <button @click="$router.push('products')" class="active:bg-[#E31E25] active:text-[#FFFBFB] active:fill-[#FFFBFB] fill-[#272727] flex gap-2 justify-center items-center p-4 uppercase rounded-[6px] border border-[#949494] text-[#272727] w-[160px] h-[45px] lg:h-[75px] lg:w-[283px] text-[14px] lg:text-[24px] font-semibold">
@@ -66,6 +66,7 @@ export default {
   flex-shrink: 0;
   border-radius: 1019px;
   opacity: 0.8;
+  z-index: -2;
   background: rgba(227, 30, 37, 0.30);
   filter: blur(239.5px);
 }
