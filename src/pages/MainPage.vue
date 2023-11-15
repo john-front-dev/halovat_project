@@ -38,12 +38,12 @@ export default {
       }
     },
   },
-  mounted() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
+  // mounted() {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth'
+  //   });
+  // }
 }
 </script>
 
