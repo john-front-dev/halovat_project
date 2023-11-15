@@ -19,7 +19,7 @@
       </div>
       <div class="flex justify-center w-full lg:justify-center items-center lg:ml-[71px] mt-[40px] xl:mt-0">
         <div class="back lg:w-[1011px] min-w-[300px] w-[350px] h-[400px] lg:h-[1019px] absolute left-1 sm:left-60 lg:left-auto lg:right-0"></div>
-          <img class="z-50 w-[300px] h-[200px] md:w-[400px] md:min-w-[400px] md:h-[250px] xl:w-[500px] xl:h-[350px]" :src="currentImage.url" alt="">
+          <img class="z-50 w-[300px] h-[200px] md:w-[400px] md:min-w-[400px] md:h-[250px] xl:min-w-[500px] xl:min-h-[350px]" :src="currentImage.url" alt="">
         </div>
     </div>
     <div class="lg:inline-flex justify-center items-center ml-[25px] sm:ml-[56px] lg:ml-[10px] xl:ml-[93px] mt-[60px] lg:mt-[186px] h-[128px] mr-[25px] sm:mr-[56px] lg:mr-[10px] xl:mr-[96px] mb-[150px] lg:mb-0">
