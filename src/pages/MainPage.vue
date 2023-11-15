@@ -6,10 +6,12 @@
     <ForPartners/>
     <ContectWithUs/>
     <SendApplication id="application"/>
+    <OurRchievements/>
   </div>
 </template>
 
 <script>
+import OurRchievements from '@/components/OurRchievements.vue';
 import SendApplication from '@/components/SendApplication.vue';
 import ContectWithUs from '@/components/ConnectWithUs.vue';
 import ForPartners from '@/components/ForPartners.vue';
@@ -18,6 +20,7 @@ import Content from '@/components/Content.vue'
 import Header from '@/components/Header.vue';
 export default {
   components: {
+    OurRchievements,
     SendApplication,
     ContectWithUs,
     ForPartners,
