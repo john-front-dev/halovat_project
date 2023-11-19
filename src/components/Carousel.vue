@@ -6,9 +6,9 @@
       </button>
       <div class="flex flex-row justify-start items-center gap-[20px] mx-4 sm:gap-[30px] xl:gap-[45px] 2xl:gap-[60px] max-w-full overflow-auto" ref="allProducts">
         <div v-for="img in images" :key="img.id" class="w-[200px] h-[300px] md:w-[250px] md:h-[360px] lg:w-[455px] lg:h-[510px] mb-[72px]" >
-          <img :src="img.url" alt="" class="w-[160px] h-[220px] sm:w-[180px] sm:h-[250px] md:w-[220px] md:h-[280px] lg:w-[328px] lg:h-[455px]">
+          <img :src="img.url" alt="" class="w-[160px] object-contain h-[220px] sm:w-[180px] sm:h-[250px] md:w-[220px] md:h-[280px] lg:w-[328px] lg:h-[455px]">
           <div class="flex flex-col justify-start items-start px-2 lg:px-[27px] text-[#4A1D1F] text-[14px] lg:text-[20px] font-semibold mt-3 lg:mt-[21px]">
-            <span>{{ img.name }}</span>
+            <span class="flex items-center h-[60px]">{{ img.name }}</span>
             <svg class="h-[2px] w-[160px] sm:w-[160px] md:w-[200px] lg:w-[275px] mt-[5px] mb-[8px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 275 2" fill="none"><path d="M0 1L274.988 0.999976" stroke="#DEDDDD"/></svg>
             <span>{{ img.type }}</span>
           </div>
@@ -18,7 +18,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14.4299 5.93005L20.4999 12.0001L14.4299 18.0701" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.5 12H20.33" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
     </div>
-    <div class="flex justify-center items-center w-full mb-[100px]">
+    <div class="flex justify-center items-center w-full mb-[100px] mt-10">
       <router-link to="products">
         <div class="inline-flex justify-center items-center cursor-pointer hover:bg-[#E31E25] hover:border-[E31E25] hover:text-[#FFFBFB] hover:fill-[#FFFBFB] lg:w-[255px] lg:h-[75px] sm:w-[210px] sm:h-[60px] w-[170px] h-[45px] text-[14px] sm:text-[16px] gap-[10px] rounded-[6px] border border-[#4A1D1F] text-[#4A1D1F] lg:text-[20px]">
           <span>Посмотреть всё</span>
@@ -30,17 +30,22 @@
 </template>
 
 <script>
-import img1 from "../assets/1.png"
+import img1 from "../assets/carousel/2.png"
+import img2 from "../assets/carousel/1.jpg"
+import img3 from "../assets/carousel/3.jpg"
+import img4 from "../assets/carousel/4.jpg"
+import img5 from "../assets/carousel/5.jpg"
+
+
 export default {
   data() {
     return{
       images:[
-        {url:img1,name:'Ананас',type:'Мармеладные дольки'},
-        {url:img1,name:'Ананас',type:'Мармеладные дольки'},
-        {url:img1,name:'Ананас',type:'Мармеладные дольки'},
-        {url:img1,name:'Ананас',type:'Мармеладные дольки'},
-        {url:img1,name:'Ананас',type:'Мармеладные дольки'},
-        {url:img1,name:'Ананас',type:'Мармеладные дольки'},
+        {url:img1,name:'Мармелад со вкусом ананаса',type:'2кг'},
+        {url:img2,name:'Медвежонок, конфеты шоколадные',type:'670гр | 3кг'},
+        {url:img3,name:'Печенье конфетка',type:'1,5кг'},
+        {url:img4,name:'Маша',type:'3кг'},
+        {url:img5,name:'Печенья с мармеладом',type:'2,7кг'},
       ]
     }
   },
