@@ -54,7 +54,8 @@ export default {
           'https://script.google.com/macros/s/AKfycbx4tDguR--tvISW0CdWj8KFllAt1ekWpsMgZI5gzI1W_1wTjpfYVgenp-7hE6ef6cNL/exec';
         const form = document.forms['submit-to-google-sheet'];
 
-        const response = await axios.post(scripыtURL, new FormData(form));
+        const response = await axios.post(scriptURL, new FormData(form));
+        console.log(response);
       } catch (error) {
       }
       finally{
