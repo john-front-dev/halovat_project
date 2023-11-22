@@ -1,8 +1,12 @@
 <template>
   <div class="2xl:container my-0 mx-auto">
     <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-start items-start pl-[20px] sm:pl-[40px] md:pl-[50px] lg:pl-[60px] xl:pl-[80px] gap-[50px] lg:gap-[101px] mb-[30px] lg:mb-[82px]">
-      <div class="flex flex-col justify-start items-start gap-[18px] minw-[250px] max-w-[330px] sm:w-[393px]">
-        <img class="" src="../assets/footer.png" alt="">
+      <div class="flex flex-col justify-start items-start gap-[18px] min-w-[250px] max-w-[330px] sm:w-[393px]">
+        <div class="flex gap-4">
+          <img class="w-[150px]" src="../assets/footer.png" alt="">
+          <img src="../assets/footer/1.png" class="h-[70px] object-contain" alt="">
+          <img src="../assets/footer/3.png" class="h-[70px] object-contain" alt="">
+        </div>
         <p class="text-[#272727] text-[14px] leading-[22.26px]">Данный сайт разработан в рамках проекта: «Активизация экономического восстановления от последствий пандемии COVID-19 посредством улучшения благосостояния, возможностей для трудоустройства и продвижения регионального сотрудничества в ферганской долине» финансируемого Правительством Российской Федерации</p>
         <div class="flex justify-start items-center gap-[30px] mt-[31px]">
           <a href="https://www.facebook.com/"><svg class="fill-[#292F36]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"></path></svg></a>
@@ -32,9 +36,6 @@
         <span class="span source"><a href="mailto:halovati.sugd@inbox.ru">halovati.sugd@inbox.ru</a></span>
         <span class="span source"><a href="tel: +992927133399">+992 92 713 33 99</a></span>
       </div>
-    </div>
-    <div class="flex justify-center items-end w-full pt-[10px] sm:pt-[20px] lg:pt-[57px] border-t border-[#E5E5E5]">
-      <span class="text-[#4D5053] text-[16px] sm:text-[18px] leading-[27px]">© 2023 Сехи Канноди “Халоват”</span>
     </div>
   </div>
 </template>
