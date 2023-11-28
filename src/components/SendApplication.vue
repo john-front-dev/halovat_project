@@ -52,12 +52,9 @@ export default {
     async submitForm() {
       this.activate = true;
       try {
-        const scriptURL = 'http://92.63.177.68:9909/api/feedback';
-        const headers = {
-          'Authorization': 'Bearer 6716266127:AAHNKTsxIkC4R_qjDz8mbJoIchhYXpQzCRk',
-          'Content-Type': 'application/json', 
-        };
-        const response = await axios.post(scriptURL, this.form, { headers });
+        const scriptURL = 'https://backendunprojects.ru/api/halovat/feedback';
+       
+        const response = await axios.post(scriptURL, this.form);
         console.log(response);
       } catch (error) {
         console.log(error);
